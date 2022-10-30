@@ -1,0 +1,132 @@
+
+<body>
+    <!-- MENU 
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="cardapio.component.html">CupCakePop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Menu de navegação com Toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="home.component.html">HOME</a>
+            <a class="nav-link" aria-current="page" href="bem-vindo.component.html">BEM-VINDO</a>
+            <a class="nav-link" aria-current="page" href="cardapio.component.html">CARDÁPIO</a>
+            <a class="nav-link active" aria-current="page" href="sobre-nos.component.html">SOBRE NÓS</a>
+            <a class="nav-link" aria-current="page" href="cupcake-card.component.cadastro.html">CADASTRO</a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+  
+    <div class="container">
+      <div class="row py-3 px-5" id="divCadastro">
+        <!-- DIV IMG -->
+        <div class="col-12">
+          <p class="fs-4 fw-bold text-center text-uppercase">Cadastro</p>
+          <form>
+            <!-- INPUT NOME E SOBRENOME  -->
+            <div class="row grupoForm">
+              <div class="form-group col-md-6">
+                <label for="nomeFormInput">Nome:</label>
+                <input type="text" class="form-control" id="nomeFormInput" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="sobrenomeFormInput">Sobrenome:</label>
+                <input type="text" class="form-control" id="sobrenomeFormInput" required>
+              </div>
+            </div>
+            <!-- INPUT EMAIL -->
+            <div class="row grupoForm">
+              <div class="form-group col-md-4">
+                <label for="emailFormInput">Email:</label>
+                <input type="email" class="form-control" id="emailFormInput" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="telefoneFormInput">Telefone:</label>
+                <input type="tel" class="form-control" id="telefoneFormInput" required maxlength="11">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="dataNascFormInput">Data Nascimento:</label>
+                <input type="date" class="form-control" id="dataNascFormInput">
+              </div>
+            </div>
+            <!-- INPUT ENDEREÇO  -->
+            <div class="form-group grupoForm">
+              <label for="enderecoFormInput">Endereço:</label>
+              <input type="text" class="form-control" id="enderecoFormInput" required>
+            </div>
+            <!-- INPUT CIDADE, UF, CEP -->
+            <div class="row grupoForm">
+              <div class="form-group col-md-5">
+                <label for="cidadeFormInput">Cidade:</label>
+                <input type="text" class="form-control" id="cidadeFormInput" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="estadoFormInput">Estado:</label>
+                <select id="estadoFormInput" class="form-control" required>
+                  <option value="" selected>Escolha...</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="cepFormInput">CEP:</label>
+                <input type="text" class="form-control" id="cepFormInput" required>
+              </div>
+            </div>
+            <!-- INPUT MENSAGEM -->
+            <div class="form-group grupoForm">
+              <label for="mensagemFormInput">Sua mensagem:</label>
+              <textarea class="form-control" id="mensagemFormInput" rows="3" cols="3"></textarea>
+            </div>
+            <!-- INPUT ACEITAR ENVIO INFO  -->
+            <div class="form-check grupoForm">
+              <input class="form-check-input" type="checkbox" value="" id="checkboxFormInput" required>
+              <label class="form-check-label" for="checkboxFormInput">
+                Concordo em compartilhar minhas informações aqui fornecidas
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btEnviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 footer">
+      © 2023 Copyright: Unimetrocamp Wyden
+    </div>
+    <!-- Copyright -->
+  
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+  </body>
