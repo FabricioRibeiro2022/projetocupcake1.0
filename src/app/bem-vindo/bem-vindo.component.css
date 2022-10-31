@@ -1,4 +1,11 @@
+ @import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+ font-family: museo-slab;
+ src: url(../fonts/Museo_Slab_500.otf);
+}
 :root {
+
     --back_color: #f9d195;
     --font_color: rgb(104, 57, 26);
     --font_museo: normal normal bold 28px/1.4em museo-slab-w01-100, museo-slab-w05-100, serif;
@@ -177,4 +184,4 @@ textarea {
     .container {
         margin-top: 5rem !important;
     }
-}
+} 
